@@ -1,0 +1,21 @@
+<html>
+
+<head>
+  <title>Etiquetas</title>
+</head>
+
+<body>
+  <font face="Consolas">
+    <i style="color:#808080" ;>//Devuelve el nombre del municipio con la primera letra en mayúscula, seguido del caudal anual, con datos, redondeando la cifra a dos decimales, y sin datos, visualizando (Sin datos).</i><br>
+    var caudalAnual = ($feature.Octubre + $feature.Noviembre + $feature.Diciembre + $feature.Enero + $feature.Febrero + $feature.Marzo + $feature.Abril + $feature.Mayo + $feature.Junio + $feature.Julio + $feature.Agosto + $feature.Septiembre) / <span style="color:#5DADE2" ;>12<span style="color:black";>;<br>
+    var caudalAnualFinal = <span style="color:#5DADE2";>round<span style="color:black";>(caudalAnual, <span style="color:#5DADE2";>2<span style="color:black";>)<br>
+    <b>if</b> (caudalAnualFinal <= <span style="color:#5DADE2";>0<span style="color:black";>){<br>
+      <dd><span style="color:#5DADE2";>Proper<span style="color:black";>($feature.Municipio, <span style="color:#EC7063";>'everyword'<span style="color:black";>) + <span style="color:#EC7063";>' (Sin datos)'<span style="color:black";>;</dd>
+    }<br>
+    <b>else</b> {<br>
+      <dd><span style="color:#5DADE2";>Proper<span style="color:black";>($feature.Municipio, <span style="color:#EC7063";>'everyword'<span style="color:black";>) + <span style="color:#EC7063";>' '<span style="color:black";> + caudalAnualFinal + <span style="color:#EC7063";>' m3/s'<span style="color:black";>;</dd>
+    };
+  </font>
+</body>
+
+</html>
