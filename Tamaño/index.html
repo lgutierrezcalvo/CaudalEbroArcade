@@ -6,14 +6,18 @@
 
 <body>
   <font face="Consolas">
-    <i style="color:#808080" ;>//Devuelve el cálculo del caudal medio anual. Devuelve null si los campos no tienen valores.</i><br>
+    <i style="color:#808080" ;>//Cálculo del caudal medio anual.</i><br>
     var caudalAnual = ($feature.Octubre + $feature.Noviembre + $feature.Diciembre + $feature.Enero + $feature.Febrero + $feature.Marzo
     + $feature.Abril + $feature.Mayo + $feature.Junio + $feature.Julio + $feature.Agosto + $feature.Septiembre) / <span style="color:#5DADE2" ;>12<span style="color:black";>;<br>
+    <br>
+    <i style="color:#808080" ;>//Devuelve null si los campos no tienen valores.</i><br>
     <b>if</b> (caudalAnual == <span style="color:#5DADE2";>0<span style="color:black";>){
       <dd><b>return null</b>;</dd>
     }<br>
+    <i style="color:#808080" ;>//Devuelve el cálculo del caudal medio anual.</i><br>
     <b>return</b> caudalAnual;<br>
-    <i style="color:#808080";>//En el mapa se viasualiza mediante el tamaño de cada entidad.</i>
+    <br>
+    <i style="color:#808080";>//En el mapa se visualiza mediante el tamaño de cada entidad.</i>
   </font>
 </body>
 
